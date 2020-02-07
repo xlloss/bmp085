@@ -25,6 +25,14 @@ Uncoment the following lines
 #blacklist i2c-bcm2708
 
 NOTE: on kernels above 3.16 i2c should be enabled through raspi-config -> advanced 
+
+for linux device tree
+
+bmp180@77 {
+	status = "okay";
+	compatible = "bmp180";
+	reg = <0x77>;
+};
  
 $ sudo nano /etc/modules 
 Add lines as follow
